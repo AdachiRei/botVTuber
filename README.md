@@ -127,12 +127,12 @@ Unityにimportしてください。
 事前にコメントを格納するテキストファイルをどこかに作っておきます。(ex."sample.txt")
 
 配布の"MarkovInu-master"をダウンロードし、MarkovInuフォルダ下の"MarkovInu.sln"を開きます。
-22行目のconst string pathの""内に先ほど作ったテキストファイルのパスを入れます。
-27行目には形態素解析ライブラリのディレクトリ(-----\MarkovInu-master\MarkovInu\MarkovInu\dic\ipadic)
+21行目のconst string pathの""内に先ほど作ったテキストファイルのパスを入れます。
+26行目には形態素解析ライブラリのディレクトリ(-----\MarkovInu-master\MarkovInu\MarkovInu\dic\ipadic)
 を入力します。
-45行目sleep()内はミリ秒を表し、文章生成の間隔を変えられます。
-61行目n = は文章生成素材とするコメント数を表しています。
-109行目のStreamWriter()で文章生成の結果を格納するテキストファイルを指定します。
+44行目sleep()内はミリ秒を表し、文章生成の間隔を変えられます。
+59行目n = は文章生成素材とするコメント数を表しています。
+102行目のStreamWriter()で文章生成の結果を格納するテキストファイルを指定します。
 そしてビルド。
 
 生成された文章は毎回クリップボードにコピーされるので、Softalk、棒読みちゃん等でクリップボード監視を
@@ -144,10 +144,10 @@ Unityにimportしてください。
 
 ・MarkovInu(MarkovInu-master_yutube)の設定（ニコ生のみの場合不要）
 
-22行目の  const string path = @"C:\botVTuber\sample.txt"; カッコ内にsample.txtのpass
-27行目の DicDir = @"C:\botVTuber\MarkovInu-master\MarkovInu\MarkovInu\dic\ipadic" カッコ内に形態素解析ライブラリのpass
-36行目の ApiKey = "ここにYoutube Data APIのキー" のカッコ内にYoutube Data APIのキーを入れてください。
-40行目の   string liveChatId = GetliveChatID("ここにYoutube Liveの番組ID", youtubeService);
+21行目の  const string path = @"C:\botVTuber\sample.txt"; カッコ内にsample.txtのpass
+26行目の DicDir = @"C:\botVTuber\MarkovInu-master\MarkovInu\MarkovInu\dic\ipadic" カッコ内に形態素解析ライブラリのpass
+35行目の ApiKey = "ここにYoutube Data APIのキー" のカッコ内にYoutube Data APIのキーを入れてください。
+39行目の   string liveChatId = GetliveChatID("ここにYoutube Liveの番組ID", youtubeService);
  のカッコ内にYoutube Liveの番組ID（IDだけ）を入れてください。
 できたらビルド。
 
