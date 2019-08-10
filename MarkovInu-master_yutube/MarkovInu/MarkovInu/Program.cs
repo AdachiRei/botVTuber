@@ -14,11 +14,10 @@ using Google.Apis.YouTube.v3;
 
 namespace YoutubeCommentGetter
 {
-    // コメントを保存していくファイルのディレクトリ
-
-
+    
     internal class Program
     {
+        // コメントを保存していくファイルのディレクトリ
         const string path = @"C:\botVTuber\sample.txt";//ここにsample.txtのpass
 
         // 形態素解析ライブラリのディレクトリ
